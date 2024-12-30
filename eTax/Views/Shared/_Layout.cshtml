@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <div style="margin-left: 100px; margin-right: 100px">
+        <div style="margin-left: 350px; margin-top: 60px; color: darkgreen">
+
+            <table>
+                <tr>
+                    <td rowspan="3">
+                        <img src=" @eTax.AppStart.logoURL " />
+
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        @eTax.AppStart.appHeaderAmh
+                                    </h2>
+                                    <h3> @eTax.AppStart.appHeaderEng </h3>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <hr />
+
+        <div style="margin: 100px; margin-left: 250px">
+            @RenderBody()
+            <hr />
+        </div>
+
+        <footer>
+            <div style="margin-left: 280px; ">
+
+                <div>
+                    <table style="width: 800px">
+                        <tr>
+
+                            <td style="color: cornflowerblue">
+                                <br />
+
+                                (c) @eTax.AppStart.appHeaderEnglish2
+                                <br />
+                                All Rights Reserved.
+                            </td>
+                            <td></td>
+                            <td style="color:cornflowerblue; text-align: right">
+
+                                <span>
+                                    <img src="~/Logo/custor.gif" />
+                                </span>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eTaxAPI</name>
+    </assembly>
+    <members>
+        <member name="M:eTaxAPI.Controllers.AuthenticateExController.GetAuthToken(System.String)">
+            <summary>
+                Returns auth token for the validated user.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:eTaxAPI.Filters.BasicAuthenticationIdentity">
+            <summary>
+                Basic Authentication identity
+            </summary>
+        </member>
+        <member name="T:eTaxAPI.Filters.GenericBasicAuthenticationFilter">
+            <summary>
+                Generic basic Authentication filter.
+            </summary>
+        </member>
+        <member name="T:PasswordSetting">
+            <summary>
+                Summary description for CPassword
+            </summary>
+        </member>
+    </members>
+</doc>
